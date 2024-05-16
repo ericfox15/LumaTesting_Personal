@@ -9,9 +9,7 @@ class HomePage:
     def __init__(self, driver):
         self.driver = driver
 
-    signInLink = (By.XPATH, "//div[@class='panel header']//a[contains(text(),'Sign In')]")
     mensLink = (By.ID, "ui-id-5")
-
     createAccountLink = (By.CSS_SELECTOR, "header[class='page-header'] li:nth-child(3) a:nth-child(1)")
 
     def getCreateAccount(self):
