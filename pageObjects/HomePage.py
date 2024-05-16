@@ -14,10 +14,6 @@ class HomePage:
 
     createAccountLink = (By.CSS_SELECTOR, "header[class='page-header'] li:nth-child(3) a:nth-child(1)")
 
-    def getSignIn(self):
-        self.driver.find_element(*HomePage.signInLink).click()
-        signInPage = SignInPage(self.driver)
-        return signInPage
     def getCreateAccount(self):
         self.driver.find_element(*HomePage.createAccountLink).click()
         createAccountPage = CreateAccountPage(self.driver)
